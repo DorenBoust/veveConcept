@@ -30,10 +30,10 @@ struct OnBoardingCardView: View {
             
         }
         .padding(30)
+        //Card
         .background(
             LinearGradient(gradient: Gradient(colors: [Color("veveBlue"), Color("whiteOpacity")]), startPoint: .top, endPoint: .bottom)
         )
-        //Card
         .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         //Card Border
         .overlay(

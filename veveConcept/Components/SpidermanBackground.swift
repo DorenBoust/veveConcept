@@ -54,6 +54,6 @@ struct SpidermanBackground: View {
 
 struct SpidermanBackground_Previews: PreviewProvider {
     static var previews: some View {
-        SpidermanBackground(selection: .constant(0))
+        SpidermanBackground(selection: .constant(1))
     }
 }

@@ -10,22 +10,31 @@ import SwiftUI
 struct OnBoarding: View {
     @State var selection = 0
     var body: some View {
-        
-        ZStack {
-            
-            TabView (selection: $selection){
-                OnBoardingCardView().tag(0)
-                OnBoardingCardView().tag(1)
-                OnBoardingCardView().tag(2)
-            }
-            .tabViewStyle(PageTabViewStyle())
-            .background(
-                ZStack {
-                    BatmanBackground(selection: $selection)
-                    SpidermanBackground(selection: $selection)
+        VStack {
+            ZStack {
+                
+                TabView (selection: $selection){
+                    OnBoardingCardView().tag(0)
+                    OnBoardingCardView().tag(1)
+                    OnBoardingCardView().tag(2)
                 }
-            )
+                .tabViewStyle(PageTabViewStyle())
+                .background(
+                    ZStack {
+                        BatmanBackground(selection: $selection)
+                        SpidermanBackground(selection: $selection)
+                    }
+                )
+            }
+            Spacer()
+            Button {
+                print("sefs")
+            } label: {
+                Text("kesafsef")
+            }
+
         }
+        
         
     }
 }
