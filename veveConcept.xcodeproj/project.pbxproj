@@ -16,6 +16,9 @@
 		EAD92EDD28A128DB00CF122D /* veveConceptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92EDC28A128DB00CF122D /* veveConceptUITests.swift */; };
 		EAD92EDF28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92EDE28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift */; };
 		EAD92EED28A12C4F00CF122D /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92EEC28A12C4F00CF122D /* OnBoarding.swift */; };
+		EAE7097528A195F30065BEDA /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = EAE7097428A195F30065BEDA /* SwiftUIX */; };
+		EAE7097728A19A4F0065BEDA /* BatmanBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7097628A19A4F0065BEDA /* BatmanBackground.swift */; };
+		EAE7097928A19ED70065BEDA /* SpidermanBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7097828A19ED70065BEDA /* SpidermanBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,8 @@
 		EAD92EDC28A128DB00CF122D /* veveConceptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veveConceptUITests.swift; sourceTree = "<group>"; };
 		EAD92EDE28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veveConceptUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EAD92EEC28A12C4F00CF122D /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		EAE7097628A19A4F0065BEDA /* BatmanBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatmanBackground.swift; sourceTree = "<group>"; };
+		EAE7097828A19ED70065BEDA /* SpidermanBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpidermanBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE7097528A195F30065BEDA /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				EACB9F4028A192D400165769 /* OnBoardingCardView.swift */,
+				EAE7097628A19A4F0065BEDA /* BatmanBackground.swift */,
+				EAE7097828A19ED70065BEDA /* SpidermanBackground.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -165,6 +173,9 @@
 			dependencies = (
 			);
 			name = veveConcept;
+			packageProductDependencies = (
+				EAE7097428A195F30065BEDA /* SwiftUIX */,
+			);
 			productName = veveConcept;
 			productReference = EAD92EBE28A128DB00CF122D /* veveConcept.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +248,9 @@
 				Base,
 			);
 			mainGroup = EAD92EB528A128DB00CF122D;
+			packageReferences = (
+				EAE7097328A195F30065BEDA /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = EAD92EBF28A128DB00CF122D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD92EC428A128DB00CF122D /* ContentView.swift in Sources */,
+				EAE7097928A19ED70065BEDA /* SpidermanBackground.swift in Sources */,
 				EAD92EED28A12C4F00CF122D /* OnBoarding.swift in Sources */,
 				EAD92EC228A128DB00CF122D /* veveConceptApp.swift in Sources */,
+				EAE7097728A19A4F0065BEDA /* BatmanBackground.swift in Sources */,
 				EACB9F4128A192D400165769 /* OnBoardingCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +623,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAE7097328A195F30065BEDA /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAE7097428A195F30065BEDA /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAE7097328A195F30065BEDA /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAD92EB628A128DB00CF122D /* Project object */;
 }

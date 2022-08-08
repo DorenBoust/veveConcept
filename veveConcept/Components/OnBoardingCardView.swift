@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIX
 
 struct OnBoardingCardView: View {
     var body: some View {
@@ -41,8 +42,16 @@ struct OnBoardingCardView: View {
                         , lineWidth: 5)
                 .blur(radius: 5)
         )
+        //BlurGlass background
+        .background(
+            VisualEffectBlurView(blurStyle: .systemUltraThinMaterial)
+                .mask(RoundedRectangle(cornerRadius: 30, style: .continuous)
+                    .fill(LinearGradient(gradient: Gradient(colors: [Color.red, Color("whiteOpacity"), Color.blue.opacity(0)]), startPoint: .top, endPoint: .bottom)))
+            
+        )
         .padding(20)
     }
+    
 }
 
 

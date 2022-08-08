@@ -8,28 +8,25 @@
 import SwiftUI
 
 struct OnBoarding: View {
+    @State var selection = 0
     var body: some View {
         
         ZStack {
-            background
-            TabView{
-                OnBoardingCardView()
-                OnBoardingCardView()
-                OnBoardingCardView()
+            
+            TabView (selection: $selection){
+                OnBoardingCardView().tag(0)
+                OnBoardingCardView().tag(1)
+                OnBoardingCardView().tag(2)
             }
             .tabViewStyle(PageTabViewStyle())
+            .background(
+                ZStack {
+                    BatmanBackground(selection: $selection)
+                    SpidermanBackground(selection: $selection)
+                }
+            )
         }
-    }
-    
-    var background: some View {
-        LinearGradient(gradient: Gradient(colors: [.white, .gray]), startPoint: .top, endPoint: .bottom)
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
-                Image("toddBatman")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
-                    .offset(y: 75)
-                    .frame(width: 1000, height: 1200, alignment: .center))
+        
     }
 }
 
