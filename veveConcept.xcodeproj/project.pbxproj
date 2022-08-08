@@ -14,6 +14,7 @@
 		EAD92ED328A128DB00CF122D /* veveConceptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92ED228A128DB00CF122D /* veveConceptTests.swift */; };
 		EAD92EDD28A128DB00CF122D /* veveConceptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92EDC28A128DB00CF122D /* veveConceptUITests.swift */; };
 		EAD92EDF28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92EDE28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift */; };
+		EAD92EED28A12C4F00CF122D /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD92EEC28A12C4F00CF122D /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EAD92ED828A128DB00CF122D /* veveConceptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veveConceptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD92EDC28A128DB00CF122D /* veveConceptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veveConceptUITests.swift; sourceTree = "<group>"; };
 		EAD92EDE28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veveConceptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAD92EEC28A12C4F00CF122D /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		EAD92EC028A128DB00CF122D /* veveConcept */ = {
 			isa = PBXGroup;
 			children = (
+				EAD92EEB28A12C3C00CF122D /* Views */,
 				EAD92EC128A128DB00CF122D /* veveConceptApp.swift */,
-				EAD92EC328A128DB00CF122D /* ContentView.swift */,
 				EAD92EC528A128DB00CF122D /* Assets.xcassets */,
 				EAD92EC728A128DB00CF122D /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				EAD92EDE28A128DB00CF122D /* veveConceptUITestsLaunchTests.swift */,
 			);
 			path = veveConceptUITests;
+			sourceTree = "<group>";
+		};
+		EAD92EEB28A12C3C00CF122D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAD92EC328A128DB00CF122D /* ContentView.swift */,
+				EAD92EEC28A12C4F00CF122D /* OnBoarding.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD92EC428A128DB00CF122D /* ContentView.swift in Sources */,
+				EAD92EED28A12C4F00CF122D /* OnBoarding.swift in Sources */,
 				EAD92EC228A128DB00CF122D /* veveConceptApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
