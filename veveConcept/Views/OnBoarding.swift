@@ -9,7 +9,27 @@ import SwiftUI
 
 struct OnBoarding: View {
     var body: some View {
-        Text("ImBoarding")
+        
+        ZStack {
+            background
+            TabView{
+                OnBoardingCardView()
+                OnBoardingCardView()
+                OnBoardingCardView()
+            }
+            .tabViewStyle(PageTabViewStyle())
+        }
+    }
+    
+    var background: some View {
+        LinearGradient(gradient: Gradient(colors: [.white, .gray]), startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+            .overlay(
+                Image("toddBatman")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .offset(y: 75)
+                    .frame(width: 1000, height: 1200, alignment: .center))
     }
 }
 
